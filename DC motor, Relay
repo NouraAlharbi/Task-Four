@@ -1,0 +1,24 @@
+int x = 4; 
+int y = 5; 
+void setup()
+{
+  pinMode(x, OUTPUT);
+  pinMode(y, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(x, 1);
+ digitalWrite(y, 0);
+ delay(1000); 
+ digitalWrite(x,0);
+ digitalWrite(y, 0);
+ delay(1000); 
+ digitalWrite(y, 1);
+ digitalWrite(x,0);
+ delay(1000); 
+ digitalWrite(y, 0);
+ digitalWrite(x,0);
+ delay(1000); 
+  
+}
